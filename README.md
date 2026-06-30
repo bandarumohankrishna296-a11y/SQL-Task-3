@@ -66,7 +66,7 @@ JOIN Enrollments e ON s.student_id = e.student_id
 GROUP BY s.student_id, s.student_name
 HAVING COUNT(e.course_id) > 1;
 
--- 4. Students Enrolled in Multiple Courses
+
 SELECT s.student_name,
 COUNT(e.course_id) AS Total_Courses
 FROM Students s
